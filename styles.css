@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Verdana", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: #5352ed;
+  font-weight: bold;
+}
+
+table {
+  width: 500px;
+  height: 500px;
+  margin: 10px auto;
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+td {
+  width: 80px;
+  height: 80px;
+  font-size: 4em;
+  text-align: center;
+}
+
+table td {
+  border: 10px solid black;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  color: white;
+}
+
+.state {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.popup {
+  width: 80%;
+  height: 90%;
+  top: 5%;
+  left: 10%;
+  position: absolute;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message {
+  width: 100%;
+  height: 80px;
+  background: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+.message > i {
+  transition: 0.5s;
+}
+.message > i:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+.hide {
+  display: none;
+}
+
+@media only screen and (max-width : 480px) { 
+  header {
+    height: 150px;
+    background: #3e3dcb;
+  }
+
+  .state {
+    margin-top: 0;
+    padding-top: 40px;
+  }
+  
+  table{
+    margin-top: 100px;
+    width: 80%;
+    height: 80%;
+  }
+
+  td {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .popup {
+    height: 60%;
+  }
+
+  .message {
+    font-size: 1em;
+  }
+
+  .message > i {
+    width: 100%;
+    font-size: 3em;
+    top: 17px;
+    display: inline-block;
+    padding: 17px;
+  }
+}
